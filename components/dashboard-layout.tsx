@@ -89,7 +89,7 @@ export function DashboardLayout({ children, role, userName = "Usuario" }: Dashbo
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 flex items-center justify-center">
                 <Image
-                  src="/logo-escuela2.png"
+                  src="/logo-escuela2.jpeg"
                   alt="Logo SIRHA"
                   width={40}
                   height={40}
