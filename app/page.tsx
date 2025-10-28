@@ -6,13 +6,13 @@ export default function LoginPage() {
     <div className="min-h-screen flex">
       {/* Left side - University branding */}
       <div className="hidden lg:flex lg:w-1/2 bg-[#8B0000] items-center justify-center p-12">
-        <div className="w-full max-w-lg flex items-center justify-center">
+        <div className="w-full max-w-md flex items-center justify-center">
           <Image
-            src="/resources/logo-escuela.png"
+            src="/logo-escuela.png"
             alt="Logo Escuela Colombiana de Ingeniería Julio Garavito"
-            width={400}
+            width={350}
             height={400}
-            className="w-auto h-auto max-w-full"
+            className="object-contain"
             priority
           />
         </div>
