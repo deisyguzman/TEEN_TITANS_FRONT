@@ -2,6 +2,7 @@
 
 import { type ReactNode, useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -86,8 +87,14 @@ export function DashboardLayout({ children, role, userName = "Usuario" }: Dashbo
           {/* Logo */}
           <div className="flex items-center justify-between p-6 border-b border-border">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-[#990000] rounded-lg flex items-center justify-center">
-                <span className="text-lg font-bold text-white">S</span>
+              <div className="w-10 h-10 flex items-center justify-center">
+                <Image
+                  src="/logo-escuela.png"
+                  alt="Logo Escuela Colombiana de Ingeniería"
+                  width={40}
+                  height={40}
+                  className="object-contain"
+                />
               </div>
               <span className="text-xl font-bold text-foreground">SIRHA</span>
             </div>
