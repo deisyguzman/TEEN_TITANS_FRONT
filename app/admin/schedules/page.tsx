@@ -5,6 +5,26 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Calendar, Download } from "lucide-react"
 
 export default function SchedulesPage() {
+  const dayMap: Record<string, number> = {
+    "Lunes": 0,
+    "Martes": 1,
+    "Miércoles": 2,
+    "Jueves": 3,
+    "Viernes": 4,
+    "Sábado": 5,
+    "Domingo": 6
+  }
+
+  const parseTime = (timeStr: string) => {
+    const [start] = timeStr.split(" - ")
+    return parseInt(start.split(":")[0])
+  }
+
+  const parseEndTime = (timeStr: string) => {
+    const [, end] = timeStr.split(" - ")
+    return parseInt(end.split(":")[0])
+  }
+
   const scheduleData = [
     { day: "Lunes", time: "08:00 - 10:00", course: "Cálculo I", room: "A-101", professor: "Dr. Juan Pérez" },
     { day: "Lunes", time: "10:00 - 12:00", course: "Física I", room: "B-205", professor: "Dra. María García" },
@@ -27,6 +47,16 @@ export default function SchedulesPage() {
       professor: "Dr. Carlos López",
     },
   ]
+
+  const scheduleBlocks = scheduleData.map((item, index) => ({
+    id: `schedule-${index}`,
+    day: dayMap[item.day],
+    startHour: parseTime(item.time),
+    endHour: parseEndTime(item.time),
+    subject: item.course,
+    group: "A",
+    room: item.room,
+  }))
 
   return (
     <DashboardLayout role="administrator">
@@ -75,7 +105,7 @@ export default function SchedulesPage() {
           </Select>
         </div>
 
-        <WeeklySchedule scheduleData={scheduleData} />
+        <WeeklySchedule scheduleBlocks={scheduleBlocks} />
       </div>
     </DashboardLayout>
   )
