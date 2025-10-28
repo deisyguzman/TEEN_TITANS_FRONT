@@ -89,8 +89,8 @@ export function DashboardLayout({ children, role, userName = "Usuario" }: Dashbo
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 flex items-center justify-center">
                 <Image
-                  src="/logo-escuela.png"
-                  alt="Logo Escuela Colombiana de Ingeniería"
+                  src="/logo-escuela2.png"
+                  alt="Logo SIRHA"
                   width={40}
                   height={40}
                   className="object-contain"
