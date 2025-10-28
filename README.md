@@ -2,14 +2,14 @@
 
 Sistema de Gestión Académica - Frontend
 
-## 👥 Integrantes
+## Integrantes
 
 - Sebastian Albarracin Silva
 - Raquel Iveth Selma Ayala
 - Juan Pablo Nieto Cortes
 - Deisy Lorena Guzmán
 
-## 🏗️ Infraestructura
+## Infraestructura
 
 Este proyecto es una aplicación web moderna desarrollada con Next.js 16 que implementa un sistema de gestión académica universitaria. La aplicación está estructurada siguiendo los principios de arquitectura de componentes y diseño modular.
 
@@ -34,7 +34,7 @@ TEEN_TITANS_FRONT/
 └── public/                  # Archivos estáticos
 ```
 
-## 🚀 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 ### Core
 - **Next.js 16.0.0** - Framework de React con App Router y Turbopack para desarrollo optimizado
@@ -62,7 +62,7 @@ TEEN_TITANS_FRONT/
 - **ESLint** - Linter para mantener código consistente
 - **PostCSS** - Procesador de CSS
 
-## 📦 Instalación y Configuración
+## Instalación y Configuración
 
 ### Prerrequisitos
 - Node.js 18+ 
@@ -96,7 +96,7 @@ npm run dev
 
 La aplicación estará disponible en `http://localhost:3000`
 
-## 🎯 Uso de la Aplicación
+## Uso de la Aplicación
 
 ### Inicio de Sesión
 
@@ -106,7 +106,7 @@ La aplicación estará disponible en `http://localhost:3000`
 
 ### Módulos por Perfil
 
-#### 👨‍🎓 Estudiante
+#### Estudiante
 - **Dashboard**: Visualiza resumen de cursos inscritos y horario
 - **Horario**: Consulta tu horario semanal
 - **Plan de Estudios**: Revisa tu malla curricular
@@ -115,21 +115,21 @@ La aplicación estará disponible en `http://localhost:3000`
   - Crear nueva solicitud (Agregar, Retirar o Cambiar materias)
 - **Gestión de Materias**: Administra tus inscripciones
 
-#### 👨‍🏫 Profesor
+#### Profesor
 - **Dashboard**: Resumen de grupos y horarios
 - **Horario**: Visualiza tu carga académica semanal
 - **Grupos**: Gestiona los grupos asignados
 - **Estudiantes**: Consulta listas de estudiantes por grupo
 - **Solicitudes**: Crea y gestiona solicitudes académicas
 
-#### 🎓 Decano
+#### Decano
 - **Dashboard**: Estadísticas de la facultad
 - **Solicitudes**: Aprobar o rechazar solicitudes de estudiantes
 - **Horarios**: Visualizar horarios de la facultad
 - **Cursos**: Gestionar oferta académica
 - **Reportes**: Generar estadísticas y reportes de capacidad
 
-#### ⚙️ Administrador
+#### Administrador
 - **Dashboard**: Resumen general del sistema
 - **Gestión de Usuarios**: CRUD de usuarios del sistema
 - **Estudiantes**: Administrar información de estudiantes
@@ -142,7 +142,7 @@ La aplicación estará disponible en `http://localhost:3000`
 - **Solicitudes**: Supervisar todas las solicitudes
 - **Reportes**: Generar reportes globales del sistema
 
-## 🔗 Integración con Backend
+## Integración con Backend
 
 La aplicación se comunica con una API REST mediante el servicio `api-service.ts` que proporciona:
 
@@ -153,7 +153,7 @@ La aplicación se comunica con una API REST mediante el servicio `api-service.ts
 
 **Configuración de la URL del backend**: Se configura mediante la variable de entorno `NEXT_PUBLIC_API_URL`
 
-## 🌐 Despliegue en Vercel
+## Despliegue en Vercel
 
 ### Configuración Automática
 
@@ -175,7 +175,7 @@ npm start
 ### URL de Producción
 La aplicación se despliega automáticamente en cada push a la rama `main` y está disponible en la URL proporcionada por Vercel.
 
-## 📝 Scripts Disponibles
+## Scripts Disponibles
 
 ```bash
 npm run dev          # Inicia servidor de desarrollo
@@ -184,7 +184,7 @@ npm start            # Inicia servidor de producción
 npm run lint         # Ejecuta ESLint
 ```
 
-## 🎨 Guía de Estilos
+## Guía de Estilos
 
 El proyecto utiliza Tailwind CSS con un sistema de diseño consistente:
 - **Colores**: Paleta personalizable mediante CSS variables
@@ -192,7 +192,7 @@ El proyecto utiliza Tailwind CSS con un sistema de diseño consistente:
 - **Componentes**: Basados en Radix UI con estilos personalizados
 - **Modo Oscuro**: Soporte nativo para tema claro/oscuro
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto es parte de un trabajo académico universitario.
 
